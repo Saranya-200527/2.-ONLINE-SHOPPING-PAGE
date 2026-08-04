@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUZZ ONLINE SHOPPING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>BUZZ ONLINE SHOPPING</h1>
+
+    <p>Find the best products at affordable prices</p>
+
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#feedback">Feedback</a>
+    </nav>
+
+</header>
+
+<!-- PRODUCTS + CART -->
+
+<div class="shop-container">
+
+    <!-- PRODUCTS -->
+
+    <section class="products" id="products">
+
+        <div class="product-card">
+
+            <img src="C:\Users\DCS\Pictures\Saved Pictures\Rockerz_551_ANC_Pro.347_1.webp" alt="">
+
+            <h2>Wireless Headphones</h2>
+
+            <p>High-quality sound with Bluetooth connectivity.</p>
+
+            <h3>Rs.3000</h3>
+
+            <div class="buttons">
+
+                <button class="cart-btn">Add to Cart</button>
+
+                <button class="remove-btn">Remove</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="C:\Users\DCS\Pictures\Saved Pictures\-original-imagxp8tn3vjjdbz.webp" alt="">
+
+            <h2>Smart Watch</h2>
+
+            <p>Track your fitness and stay connected.</p>
+
+            <h3>Rs.2500</h3>
+
+            <div class="buttons">
+
+                <button class="cart-btn">Add to Cart</button>
+
+                <button class="remove-btn">Remove</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="C:\Users\DCS\Pictures\Saved Pictures\bagpack-school-college-travel-office-bag-b02-tbl-laptop-backpack-original-imahkakpzsqvnjeh.webp" alt="">
+
+            <h2>Laptop Backpack</h2>
+
+            <p>Durable and stylish backpack with multiple compartments.</p>
+
+            <h3>Rs.3000</h3>
+
+            <div class="buttons">
+
+                <button class="cart-btn">Add to Cart</button>
+
+                <button class="remove-btn">Remove</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="C:\Users\DCS\Pictures\Saved Pictures\runningshoesforyou-2048px-2254.webp" alt="">
+
+            <h2>Running Shoes</h2>
+
+            <p>Comfortable shoes for daily running and workouts.</p>
+
+            <h3>Rs.3590</h3>
+
+            <div class="buttons">
+
+                <button class="cart-btn">Add to Cart</button>
+
+                <button class="remove-btn">Remove</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="C:\Users\DCS\Pictures\Saved Pictures\Untitled-design-2026-04-02T093336.490.jpg" alt="">
+
+            <h2>Smartphone</h2>
+
+            <p>Latest 5G smartphone with high-performance camera.</p>
+
+            <h3>Rs.18,999</h3>
+
+            <div class="buttons">
+
+                <button class="cart-btn">Add to Cart</button>
+
+                <button class="remove-btn">Remove</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="C:\Users\DCS\Pictures\Saved Pictures\dell-xps-13-plus-review-14-1024x576.jpg" alt="">
+
+            <h2>Laptop</h2>
+
+            <p>Powerful laptop suitable for work and gaming.</p>
+
+            <h3>Rs.52,999</h3>
+
+            <div class="buttons">
+
+                <button class="cart-btn">Add to Cart</button>
+
+                <button class="remove-btn">Remove</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="C:\Users\DCS\Pictures\Saved Pictures\71_ISrP3v6L._SL1500.webp" alt="">
+
+            <h2>Bluetooth Speaker</h2>
+
+            <p>Portable speaker with deep bass and long battery life.</p>
+
+            <h3>Rs.2,499</h3>
+
+            <div class="buttons">
+
+                <button class="cart-btn">Add to Cart</button>
+
+                <button class="remove-btn">Remove</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="C:\Users\DCS\Pictures\Saved Pictures\feel-happy-unisex-t-shirt-with-funcky-back-print-883334.webp" alt="">
+
+            <h2>Casual T-Shirt</h2>
+
+            <p>100% Cotton Round Neck T-Shirt.</p>
+
+            <h3>Rs.799</h3>
+
+            <div class="buttons">
+
+                <button class="cart-btn">Add to Cart</button>
+
+                <button class="remove-btn">Remove</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="C:\Users\DCS\Pictures\Saved Pictures\Click_10_Orange_216aea36-93d3-4b8b-a576-a46b19f3d260.webp" alt="">
+
+            <h2>Power Bank</h2>
+
+            <p>10000mAh Fast Charging Dual USB Power Bank.</p>
+
+            <h3>Rs.1499</h3>
+
+            <div class="buttons">
+
+                <button class="cart-btn">Add to Cart</button>
+
+                <button class="remove-btn">Remove</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SHOPPING CART -->
+
+    <section id="cart">
+
+        <h2>🛒 Shopping Cart</h2>
+
+        <ul id="cart-list"></ul>
+
+        <h3>Total Bill : Rs. <span id="total">0</span></h3>
+
+        <button onclick="generateBill()">Generate Bill</button>
+
+    </section>
+
+</div>
+
+<!-- Contact & Feedback -->
+
+<div class="bottom-section">
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p><strong>BUZZ Online Shopping</strong></p>
+        <p>📍 PONDICHERRY</p>
+        <p>📞 +91 1234567890</p>
+        <p>📧 support@buzzshop.com</p>
+        <p>🕒 Mon - Sat : 9.00 AM - 8.00 PM</p>
+
+    </section>
+
+    <!-- Feedback -->
+
+    <section class="feedback" id="feedback">
+
+        <h2>Customer Feedback</h2>
+
+        <form>
+
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <input type="email" placeholder="Enter Your Email" required>
+
+            <textarea rows="6" placeholder="Write your feedback here..." required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+    </section>
+
+</div>
+
+<footer>
+
+    <p>&copy; 2026 BUZZ Online Shopping. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+let cart = [];
+let total = 0;
+
+const cartList = document.getElementById("cart-list");
+const totalDisplay = document.getElementById("total");
+
+const cards = document.querySelectorAll(".product-card");
+
+cards.forEach(card => {
+
+    const name = card.querySelector("h2").innerText;
+
+    const price = parseInt(
+        card.querySelector("h3").innerText.replace(/[^0-9]/g, "")
+    );
+
+    const addBtn = card.querySelector(".cart-btn");
+    const removeBtn = card.querySelector(".remove-btn");
+
+    addBtn.addEventListener("click", () => {
+
+        cart.push({
+            name: name,
+            price: price
+        });
+
+        total += price;
+
+        updateCart();
+
+    });
+
+    removeBtn.addEventListener("click", () => {
+
+        const index = cart.findIndex(item => item.name === name);
+
+        if(index > -1){
+
+            total -= cart[index].price;
+
+            cart.splice(index,1);
+
+            updateCart();
+
+        }else{
+
+            alert("This product is not in the cart.");
+
+        }
+
+    });
+
+});
+
+function updateCart(){
+
+    cartList.innerHTML = "";
+
+    cart.forEach(item=>{
+
+        let li = document.createElement("li");
+
+        li.innerHTML = item.name + " - Rs. " + item.price;
+
+        cartList.appendChild(li);
+
+    });
+
+    totalDisplay.innerHTML = total;
+
+}
+
+function generateBill(){
+
+    if(cart.length===0){
+
+        alert("Your cart is empty!");
+
+        return;
+
+    }
+
+    let bill = "========== BUZZ ONLINE SHOPPING ==========\n\n";
+
+    cart.forEach((item,index)=>{
+
+        bill += (index+1) + ". " + item.name;
+
+        bill += " - Rs." + item.price + "\n";
+
+    });
+
+    bill += "\n--------------------------------------";
+
+    bill += "\nTotal Bill : Rs." + total;
+
+    bill += "\n--------------------------------------";
+
+    bill += "\n\nThank You For Shopping!";
+
+    alert(bill);
+
+}
+
+</script>
+
+</body>
+</html>
